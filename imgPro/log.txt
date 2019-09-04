@@ -1,0 +1,59 @@
+2019-09-03 01:09:40 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-03 01:09:40 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\python3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python3.6\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.engine = self._create_engine()
+  File "d:\python3.6\lib\site-packages\scrapy\crawler.py", line 111, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python3.6\lib\site-packages\scrapy\core\engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python3.6\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python3.6\lib\site-packages\scrapy\middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python3.6\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python3.6\lib\site-packages\scrapy\utils\misc.py", line 46, in load_object
+    mod = import_module(module)
+  File "d:\python3.6\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\wanglixing\Desktop\文件夹\scrapy学习\imgPro\imgPro\pipelines.py", line 14, in <module>
+    from scrapy.pipelines.images import ImagesPipeline
+  File "d:\python3.6\lib\site-packages\scrapy\pipelines\images.py", line 15, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+2019-09-03 01:14:32 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-03 01:14:32 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\python3.6\lib\site-packages\scrapy\utils\misc.py", line 49, in load_object
+    obj = getattr(mod, name)
+AttributeError: module 'imgPro.pipelines' has no attribute 'ImgproPipeline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\python3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python3.6\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.engine = self._create_engine()
+  File "d:\python3.6\lib\site-packages\scrapy\crawler.py", line 111, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python3.6\lib\site-packages\scrapy\core\engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python3.6\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python3.6\lib\site-packages\scrapy\middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python3.6\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python3.6\lib\site-packages\scrapy\utils\misc.py", line 51, in load_object
+    raise NameError("Module '%s' doesn't define any object named '%s'" % (module, name))
+NameError: Module 'imgPro.pipelines' doesn't define any object named 'ImgproPipeline'
