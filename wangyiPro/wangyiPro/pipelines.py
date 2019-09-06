@@ -12,18 +12,7 @@ import time
 APP_ID = '17170467'
 API_KEY = 'I9gTHCwucpgxwPUjepnLrpsG'
 SECRET_KEY = '7BouOaHfzde2rv7XD7QPWl40gRB0j7GE'
-#
-# class WangyiproPipeline(object):
-#     client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
-#
-#     def process_item(self, item, spider):
-#         title = item['title']
-#         content = item['content']
-#         content = content.replace(u'\xa0',u' ')
-#         w_dic = self.client.keyword(title, content)
-#         tp_dic = self.client.topic(title, content)
-#         print(w_dic,tp_dic)
-#         return item
+
 
 
 class MysqlPL(object):
@@ -48,6 +37,7 @@ class MysqlPL(object):
         self.cursor = self.conn.cursor()
         try:
             self.cursor.execute(sql)
+
         except Exception as e:
             self.conn.rollback()
 
