@@ -15,6 +15,7 @@ class SpiderSpider(scrapy.Spider):
     # 解析函数，用于解析本网页li标签
     def parse(self, response):
         li_list = response.xpath('//*[@id="content_001002002003"]/li')
+
         for li in li_list:
             title = li.xpath('./div/a/text()').extract_first()
             # 解析出二级页面的url
@@ -37,8 +38,6 @@ class SpiderSpider(scrapy.Spider):
         item['name'] = name
         time = ''.join(time)
         item['time'] = time
-
-
         yield item
 
 
