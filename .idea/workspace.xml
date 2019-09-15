@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0133a4b9-c4d6-4c2b-a639-791ced4cdf01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/kuaixun/spiders/spiders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuaixun/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hebei/hebei/spiders/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebei/hebei/spiders/spider.py" afterDir="false" />
-    </list>
+    <list default="true" id="0133a4b9-c4d6-4c2b-a639-791ced4cdf01" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +188,7 @@
       <workItem from="1568029989855" duration="10226000" />
       <workItem from="1568072953905" duration="114000" />
       <workItem from="1568073128281" duration="2711000" />
-      <workItem from="1568096652497" duration="1908000" />
+      <workItem from="1568096652497" duration="2507000" />
     </task>
     <servers />
   </component>
